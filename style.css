@@ -15,7 +15,7 @@
 	height: 600px;
 }
 */
-.header-1{
+.header{
 	height: 100vh;
 	background-image: url(images/dimmas-pictures/HEADER1.jpg);
 	background-attachment: fixed;
@@ -33,7 +33,12 @@
 	letter-spacing: 2px;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 12px;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 nav{
 	width: 100%;
