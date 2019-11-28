@@ -1,3 +1,8 @@
+/* to start of the css aspect, i put in some unversal style eg. list-style-type: none; a(text-decoration: none;)
+to remove the default styling that comes with <a> and <li>, i also used (*) which affects the whole body to make some default
+setting of my own e.g i set the padding and margin to zero to remove unwanted white space, gave it a default font styling, letter-
+spacing, text-align, and text-transform */
+
 *{
 	padding: 0px;
 	margin: 0px;
@@ -10,12 +15,24 @@
 	font-size: 10px;
 }
 
-/*.box{
-	width: 100%
-	height: 600px;
+li{	
+	list-style-type: none;
+	padding: 0 15px 0 15px;
+	margin: 17px 0px;
 }
+
+a{
+	text-decoration: none;
+}
+
+/* 
+div class="header-1: to make the header background fixed, i gave the header-1 div a height that covers the whole page it's to be fixed to, used background-
+attachment instead of position to append the fixed attribuite to the div then i flexed the contents of the div 
+p class="white-h3": i wanted the h3 to be outline just for the sake of it and i found that the text-shadow style does just that but it doesnt
+work beyond 1px lol
+i class="fas fa-chevron-down": i just discovered that you style icons just like you style fonts
 */
-.header{
+.header-1{
 	height: 100vh;
 	background-image: url(images/dimmas-pictures/HEADER1.jpg);
 	background-attachment: fixed;
@@ -27,25 +44,34 @@
     justify-content: center;
 }
 
-.scroll-down{
+.white-h3{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	letter-spacing: 2px;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 15px;
 	text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
 }
+
+.fa-chevron-down{
+	font-size: 20px;
+}
+
+/*
+nav:  making the nav sticky wasnt quite the same way i made the header fixed/sticky, i used position this time and i set it to sticky,
+i used z-index and set that one to 1 to get that 3d fixed effect but 1 thing i dont quite understand is that need to set the top =0
+but if you dont do that, it wont work.
+*/
+
 nav{
 	width: 100%;
 	height: 65px;
 	background-color: rgb(0,0,0);
-	border-top: 1px solid rgba(255,255,255,.2);
-	border-bottom: 1px solid rgba(255,255,255,.2);
 	position: sticky;
 	top:0;
 	z-index: 1;
@@ -62,11 +88,7 @@ nav{
   	width: 85%;
  }
 
-li{	
-	list-style-type: none;
-	padding: 0 15px 0 15px;
-	margin: 17px 0px;
-}
+
 .link-white{
     text-decoration: none;
     color: white;
@@ -98,6 +120,11 @@ p{
 	font-size: 12px;
 	text-align: center;
 }
+
+/* .fa-instagram{
+	color: white;
+	background-color: white;
+} */
 
 main{
 	text-align: center;
