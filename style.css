@@ -35,6 +35,9 @@ i{
 .bio{
 	text-align: justify;
 }
+.caps{
+	text-transform: uppercase;
+}
 
 /* 
 div class="header-1: to make the header background fixed, i gave the header-1 div a height that covers the whole page it's to be fixed to, used background-
@@ -264,23 +267,42 @@ p{
 }
 
 .footer{
-	margin: 0;
+	width: 100%;
+	margin: 0 auto;
 	padding: 0;
 }
 .black-footer{
+	margin: 0 auto;
 	color: white;	
 	background-color: black;
-	height: 250px;
+	height: 350px;
+}
+.latest-videos-text{
+	margin: 35px 0;
 }
 
-.about-dimma{
-    letter-spacing: 3px;
-    text-align: justify;
-    font-size: 12px;
-    text-transform: none;
-    line-height: 1.5;
+.latest-videos-images-links{
+	margin: o auto;
+	height: 150px;
 }
 
+.image-box{
+	margin: 0 auto;
+	width: 65%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 5px;
+}
+
+.footer-image{
+	border: 2px solid red;
+}
+
+.fa-play{
+	margin-top: 50px;
+	font-size: 30px;
+}
 
 h2{
 	padding: 45px 0;
@@ -288,10 +310,6 @@ h2{
 	font-size: 20px;
 	font-family: 'Playfair Display', serif;
 	letter-spacing: 1;	
-}
-
-footer{
-	text-align: center;
 }
 
 .footer-link{
@@ -302,11 +320,11 @@ input{
 	height: 35px;
 	width: 250px;
 }
-.lower-link{
+
+/* .home-contact{
+	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-}
-.buttom{
-	margin: 0;
-}
+} */
+
