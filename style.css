@@ -110,6 +110,11 @@ nav{
 }
 .white-link{
 	color: white;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 .socials{
 	padding: 10px 0px;
@@ -206,41 +211,68 @@ p{
 	height: 40px;
 	width: 45%;
 }
-.view-older{
-	margin: 0 0px 0 350px;
+/* setting the grid box style for the popular post grid  */
+
+.sidebar-popular-post-image-link{
+	height: 380px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+}
+
+.box{
+	height: 100%;
+	padding-top: 25px;
 }
 
 
-
-
-.about-image{
-	margin: ;
+.sidebar-popular-post-link1{
+	background-image: url(images/dimmas-pictures/aside-1.png);
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+}
+.sidebar-popular-post-link2{
+	background-image: url(images/dimmas-pictures/aside-2.png);
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+}
+.sidebar-popular-post-link3{
+	background-image: url(images/dimmas-pictures/HEADER1.jpg);
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+}
+.sidebar-popular-post-link4{
+	background-image: url(images/dimmas-pictures/aside-4.png);
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+}
+.sidebar-popular-post-link5{
+	background-image: url(images/dimmas-pictures/HEADER1.jpg);
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+}
+.sidebar-popular-post-link6{
+	background-image: url(images/dimmas-pictures/aside-6.png);
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
 }
 
-aside{
-	text-align: center;
-	margin: 0 110px 0 0px;
-	width: 300px;
+.footer{
+	margin: 0;
+	padding: 0;
 }
-h4{
-	margin: 15px;
-	font-size: 10px;
-}
-
-button{
-	background-color: black;
-	color: white;
-	height: 35px;
-	width: 150px;
-}
-
-.buttom{
+.black-footer{
 	color: white;	
 	background-color: black;
 	height: 250px;
-	margin: 10px 0;
-
 }
+
 .about-dimma{
     letter-spacing: 3px;
     text-align: justify;
@@ -249,10 +281,7 @@ button{
     line-height: 1.5;
 }
 
-.link-black{
-    text-decoration: none;
-    color: black;
-}
+
 h2{
 	padding: 45px 0;
 	font-weight: 200;
