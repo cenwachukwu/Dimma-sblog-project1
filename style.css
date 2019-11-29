@@ -118,7 +118,8 @@ nav{
 /*
 <main>: i created the main tag to enable me define a margin and a height for this section.
 div class="main": with the main class, i flexed the 2 body divs i.e. divided the body section into two. the <main> tag allowed us
-set a boundary for this. either flexbox or grid can do this but flex is easier for me
+set a boundary for this. either flexbox or grid can do this but flex is easier for me.
+
 */
 main{
 	margin: 0 156px;
@@ -131,15 +132,14 @@ main{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	column-gap: 0;
 }
 .posts{
-	border: 2px solid orange;
-	width: 70%;
+	width: 100%;
 }
 .sidebar{
-	/* border: 2px solid coral; */
-	width: 25%;
-	margin: 25px 30px 0 30px;
+	width: 35%;
+	margin: 25px 30px 0 -10px;
 }
 
 /* here we begin to style the body */
@@ -149,7 +149,11 @@ main{
 }
 
 .fa-map-marker-alt{
-	font-size: 20px;
+	font-size: 15px;
+}
+
+.post{
+	padding: 25px 10px;
 }
 
 .first-post{
@@ -174,8 +178,6 @@ p{
 	text-align: center;
 }
 
-
-
 .location{
 	font-size: 10px;
 	text-decoration: none;
@@ -195,10 +197,25 @@ p{
 	font-size: 10px;
 	line-height: 25px;
 }
+.button{
+	margin: 0 auto;
+	padding-top: 10px;
+	background-color: black;
+	color: white;
+	height: 40px;
+	width: 20%;
+}
+.post-comment{
+	padding-top: 10px;
+}
 
 
 
 
+
+.about-image{
+	margin: ;
+}
 
 aside{
 	text-align: center;
