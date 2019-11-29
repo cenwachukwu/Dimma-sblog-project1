@@ -25,6 +25,16 @@ a{
 	text-decoration: none;
 }
 
+i{
+	color: white;
+	font-size: 13px;
+	padding: 5px;
+}
+
+.bio{
+	text-align: justify;
+}
+
 /* 
 div class="header-1: to make the header background fixed, i gave the header-1 div a height that covers the whole page it's to be fixed to, used background-
 attachment instead of position to append the fixed attribuite to the div then i flexed the contents of the div 
@@ -66,6 +76,8 @@ i class="fas fa-chevron-down": i just discovered that you style icons just like 
 nav:  making the nav sticky wasnt quite the same way i made the header fixed/sticky, i used position this time and i set it to sticky,
 i used z-index and set that one to 1 to get that 3d fixed effect but 1 thing i dont quite understand is that need to set the top =0
 but if you dont do that, it wont work.
+div class="wrapper": i initially didnt have a wrapper div round my nav but without a wrapper round your main div, your display flex would
+not be able to set margin properly to 0 auto and center. i also manipulated the width of the div, gave it some padding and some height.
 */
 
 nav{
@@ -82,61 +94,79 @@ nav{
 	display: flex;
    	flex-direction: row;
   	justify-content: space-between;
-  	font-size: 12px;
   	height: 60px;
-  	color: white;
-  	width: 85%;
- }
-
-
-.link-white{
-    text-decoration: none;
-    color: white;
-    font-size: 10px;
+  	width: 75%;
 }
-.top-right{
+.img-blog-nav{
+	display: flex;
+   	flex-direction: row;
+  	justify-content: space-between;
+}
+.nav-links{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
- .nav-links{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.link-black{
-    text-decoration: none;
-    color: black;
-}
-.middle{
-	margin: 0 65px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 100%;
-}
-p{
-	font-size: 12px;
-	text-align: center;
-}
-
-/* .fa-instagram{
+.white-link{
 	color: white;
-	background-color: white;
-} */
+}
+.socials{
+	padding: 10px 0px;
+}
+
 
 main{
-	text-align: center;
+	/* text-align: center;
 	padding: 25px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 0 0 0 110px;
-	width: 75%;
+	width: 85%; */
+
+	margin: 0 156px;
+	/* display: flex;
+	flex-direction: row;
+	justify-content: space-between; */
+	height: 100%;
 
 }
+.main{
+	border: 2px solid green;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.posts{
+	border: 2px solid orange;
+	width: 70%;
+}
+.sidebar{
+	/* border: 2px solid coral; */
+	width: 25%;
+	margin: 25px 30px 0 30px;
+}
+
+
+
+
+
+
+.fa-map-marker-alt{
+	color: black;
+}
+.black-link{
+    color: black;
+}
+
+p{
+	font-size: 12px;
+	text-align: center;
+}
+
+
 
 .location{
 	font-size: 10px;
