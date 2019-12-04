@@ -48,30 +48,54 @@
 		</div>
 	</nav>
 
-	<div class="scroll-bar">
-		<div class="slide">
-			<a href="#" class="white-link">finally ready to talk about it</a>
+	<!-- in order to make our slide come up in a loop, we put a copy of our first slide last and a copy of our last
+	slide first. we will use js to finish this setup. we also put our buttons on either side of our scroll-bar div  -->
+
+	<div class="carrousel-container">
+
+		<button class="carrousel__button">
+			<i class="fas fa-chevron-left"></i>
+		</button>
+
+		<div class="scroll-bar">
+			<div class="slide">
+				<a href="#" class="white-link" id="last-image">dimma living #29</a>
+			</div>
+			<div class="slide">
+				<a href="#" class="white-link">finally ready to talk about it</a>
+			</div>
+			<div class="slide">
+				<a href="#" class="white-link">brands i stopped supporting, influencers i don't...truthful youtuber
+					tag</a>
+			</div>
+			<div class="slide">
+				<a href="#" class="white-link">so i decided to change my hair...and it looks so natural</a>
+			</div>
+			<div class="slide">
+				<a href="#" class="white-link">doing my makeup in igbo with chigul</a>
+			</div>
+			<div class="slide">
+				<a href="#" class="white-link">dimma living #30 (youtube black)</a>
+			</div>
+			<div class="slide">
+				<a href="#" class="white-link">dimma living #29</a>
+			</div>
+			<div class="slide">
+				<a href="#" class="white-link" id="first-image">finally ready to talk about it</a>
+			</div>
 		</div>
-		<div class="slide">
-			<a href="#" class="white-link">brands i stopped supporting, influencers i don't...truthful youtuber tag</a>
-		</div>
-		<div class="slide">
-			<a href="#" class="white-link">so i decided to change my hair...and it looks so natural</a>
-		</div>
-		<div class="slide">
-			<a href="#" class="white-link">doing my makeup in igbo with chigul</a>
-		</div>
-		<div class="slide">
-			<a href="#" class="white-link">dimma living #30 (youtube black)</a>
-		</div>
-		<div class="slide">
-			<a href="#" class="white-link">dimma living #29</a>
-		</div>
+
+		<button class="carrousel__button">
+			<i class="fas fa-chevron-right"></i>
+		</button>
+
 	</div>
+
 
 	<div class="signature-box">
 		<img />
 	</div>
+
 	<main>
 		<div class="main">
 			<div class="posts">

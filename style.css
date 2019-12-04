@@ -123,6 +123,54 @@ nav{
 	padding: 10px 0px;
 }
 
+/* making the carrousel:
+div class="carrousel-container": we set the overflow to hidden to hide the pictures that are not being displayed yet 
+div class="scroll-bar": when we set the grid, we make everything a column so they can all be on the same line. you can also use flex
+box for this eg. display: flex, flex-direction: column.
+div class="slide": used this to set a custom height and width for the individual slide
+div class="carrousel__button" : used top:50% b/c we want it to be in the middle but that just sets the top of the button in the middle. 
+so we have to do transform: translateY(-50%), Y b/c the y axis is up and down and -50% b/c 50% down the height of its parent but considering
+its own size
+ */
+
+.carrousel-container{
+	border: 2px solid red;
+	height: 400px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	/* overflow: hidden; */
+}
+
+.scroll-bar{
+	margin: 0;
+	border: 2px solid purple;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+}
+.slide{
+	/* border: 2px solid green; */
+	height: 350px;
+	width: 620px;
+}
+.carrousel__button{
+	position: absolute;
+	top: 50%; 
+	transform: translateY(-50%);
+}
+.carrousel__button i{
+	font-size: 80px;
+}
+
+
+
+
+
+
+
+
 /*
 <main>: i created the main tag to enable me define a margin and a height for this section.
 div class="main": with the main class, i flexed the 2 body divs i.e. divided the body section into two. the <main> tag allowed us
